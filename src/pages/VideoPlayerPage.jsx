@@ -13,8 +13,8 @@ export default function VideoPlayerPage() {
     };
 
     const getVideoSrc = () => {
-        if (id === '3') return "/videos/Video_H3_fouth.mp4";
-        if (id === '4') return "/videos/Video_H4.mp4";
+        if (id === '3') return "/web-app-histoires/videos/Video_H3_fouth.mp4";
+        if (id === '4') return "/web-app-histoires/videos/Video_H4.mp4";
         return null;
     };
 
@@ -24,7 +24,7 @@ export default function VideoPlayerPage() {
         <div
             className="page-container"
             style={{
-                backgroundImage: "url('/images/bg.png')",
+                backgroundImage: "url('/web-app-histoires/images/bg.png')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat'
@@ -32,7 +32,7 @@ export default function VideoPlayerPage() {
         >
             {/* Nuage 1: Grand et lent à gauche */}
             <motion.img
-                src="/images/cloud.svg"
+                src="/web-app-histoires/images/cloud.svg"
                 style={{ position: 'absolute', top: '0%', left: '0%', width: '450px', zIndex: 1, opacity: 0.95 }}
                 animate={{ x: [0, 60, -30, 0] }}
                 transition={{ repeat: Infinity, duration: 35, ease: "easeInOut" }}
@@ -40,7 +40,7 @@ export default function VideoPlayerPage() {
 
             {/* Nuage 2: Moyen, rapide à droite */}
             <motion.img
-                src="/images/cloud.svg"
+                src="/web-app-histoires/images/cloud.svg"
                 style={{ position: 'absolute', top: '2%', right: '2%', width: '400px', zIndex: 1, opacity: 0.95 }}
                 animate={{ x: [0, -40, 20, 0] }}
                 transition={{ repeat: Infinity, duration: 18, ease: "easeInOut", delay: 2 }}
@@ -48,7 +48,7 @@ export default function VideoPlayerPage() {
 
             {/* Nuage 3: Assez grand au centre */}
             <motion.img
-                src="/images/cloud.svg"
+                src="/web-app-histoires/images/cloud.svg"
                 style={{ position: 'absolute', top: '-1%', left: '30%', width: '260px', zIndex: 1, opacity: 0.95 }}
                 animate={{ x: [0, 45, -25, 0] }}
                 transition={{ repeat: Infinity, duration: 28, ease: "easeInOut", delay: 5 }}
@@ -56,7 +56,7 @@ export default function VideoPlayerPage() {
 
             {/* Nuage 4: Assez grand au centre à droite */}
             <motion.img
-                src="/images/cloud.svg"
+                src="/web-app-histoires/images/cloud.svg"
                 style={{ position: 'absolute', top: '4%', left: '58%', width: '280px', zIndex: 1, opacity: 0.95 }}
                 animate={{ x: [0, 45, -25, 0] }}
                 transition={{ repeat: Infinity, duration: 28, ease: "easeInOut", delay: 5 }}

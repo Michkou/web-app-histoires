@@ -9,7 +9,7 @@ export default function StorySelectionPage() {
         <div
             className="page-container"
             style={{
-                backgroundImage: "url('/images/bg.png')",
+                backgroundImage: "url('/web-app-histoires/images/bg.png')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat'
@@ -18,7 +18,7 @@ export default function StorySelectionPage() {
             {/* Nuages réalistes en fond éparpillés */}
             {/* Nuage 1: Grand et lent à gauche */}
             <motion.img
-                src="/images/cloud.svg"
+                src="/web-app-histoires/images/cloud.svg"
                 style={{ position: 'absolute', top: '0%', left: '0%', width: '450px', zIndex: 1, opacity: 0.95 }}
                 animate={{ x: [0, 60, -30, 0] }}
                 transition={{ repeat: Infinity, duration: 35, ease: "easeInOut" }}
@@ -26,7 +26,7 @@ export default function StorySelectionPage() {
 
             {/* Nuage 2: Moyen, rapide à droite */}
             <motion.img
-                src="/images/cloud.svg"
+                src="/web-app-histoires/images/cloud.svg"
                 style={{ position: 'absolute', top: '2%', right: '2%', width: '400px', zIndex: 1, opacity: 0.95 }}
                 animate={{ x: [0, -40, 20, 0] }}
                 transition={{ repeat: Infinity, duration: 18, ease: "easeInOut", delay: 2 }}
@@ -34,7 +34,7 @@ export default function StorySelectionPage() {
 
             {/* Nuage 3: Assez grand au centre */}
             <motion.img
-                src="/images/cloud.svg"
+                src="/web-app-histoires/images/cloud.svg"
                 style={{ position: 'absolute', top: '-1%', left: '30%', width: '260px', zIndex: 1, opacity: 0.95 }}
                 animate={{ x: [0, 45, -25, 0] }}
                 transition={{ repeat: Infinity, duration: 28, ease: "easeInOut", delay: 5 }}
@@ -42,7 +42,7 @@ export default function StorySelectionPage() {
 
             {/* Nuage 4: Assez grand au centre à droite */}
             <motion.img
-                src="/images/cloud.svg"
+                src="/web-app-histoires/images/cloud.svg"
                 style={{ position: 'absolute', top: '4%', left: '58%', width: '280px', zIndex: 1, opacity: 0.95 }}
                 animate={{ x: [0, 45, -25, 0] }}
                 transition={{ repeat: Infinity, duration: 28, ease: "easeInOut", delay: 5 }}
@@ -63,7 +63,7 @@ export default function StorySelectionPage() {
                     whileHover={{ scale: 1.05, y: -10 }}
                     className="story-card emotion-card"
                     style={{
-                        backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.85) 100%), url('/images/story4_scene_15.png')",
+                        backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.85) 100%), url('/web-app-histoires/images/story4_scene_15.png')",
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         justifyContent: 'space-between',
@@ -79,7 +79,7 @@ export default function StorySelectionPage() {
                     whileHover={{ scale: 1.05, y: -10 }}
                     className="story-card calm-card"
                     style={{
-                        backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.85) 100%), url('/images/story1_scene_11.png')",
+                        backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.85) 100%), url('/web-app-histoires/images/story1_scene_11.png')",
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         justifyContent: 'space-between',

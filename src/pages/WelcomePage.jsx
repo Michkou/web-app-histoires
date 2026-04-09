@@ -9,7 +9,7 @@ export default function WelcomePage() {
         <div
             className="page-container"
             style={{
-                backgroundImage: "url('/images/bg.png')",
+                backgroundImage: "url('/web-app-histoires/images/bg.png')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat'
@@ -19,7 +19,7 @@ export default function WelcomePage() {
 
             {/* Nuage 1: Grand et lent à gauche */}
             <motion.img
-                src="/images/cloud.svg"
+                src="/web-app-histoires/images/cloud.svg"
                 style={{ position: 'absolute', top: '0%', left: '0%', width: '450px', zIndex: 1, opacity: 0.95 }}
                 animate={{ x: [0, 60, -30, 0] }}
                 transition={{ repeat: Infinity, duration: 35, ease: "easeInOut" }}
@@ -27,7 +27,7 @@ export default function WelcomePage() {
 
             {/* Nuage 2: Moyen, rapide à droite */}
             <motion.img
-                src="/images/cloud.svg"
+                src="/web-app-histoires/images/cloud.svg"
                 style={{ position: 'absolute', top: '2%', right: '2%', width: '400px', zIndex: 1, opacity: 0.95 }}
                 animate={{ x: [0, -40, 20, 0] }}
                 transition={{ repeat: Infinity, duration: 18, ease: "easeInOut", delay: 2 }}
@@ -35,7 +35,7 @@ export default function WelcomePage() {
 
             {/* Nuage 3: Assez grand au centre */}
             <motion.img
-                src="/images/cloud.svg"
+                src="/web-app-histoires/images/cloud.svg"
                 style={{ position: 'absolute', top: '-1%', left: '30%', width: '260px', zIndex: 1, opacity: 0.95 }}
                 animate={{ x: [0, 45, -25, 0] }}
                 transition={{ repeat: Infinity, duration: 28, ease: "easeInOut", delay: 5 }}
@@ -43,7 +43,7 @@ export default function WelcomePage() {
 
             {/* Nuage 4: Assez grand au centre à droite */}
             <motion.img
-                src="/images/cloud.svg"
+                src="/web-app-histoires/images/cloud.svg"
                 style={{ position: 'absolute', top: '4%', left: '58%', width: '280px', zIndex: 1, opacity: 0.95 }}
                 animate={{ x: [0, 45, -25, 0] }}
                 transition={{ repeat: Infinity, duration: 28, ease: "easeInOut", delay: 5 }}
@@ -61,7 +61,7 @@ export default function WelcomePage() {
             <div className="characters-scene">
                 {/* Les parents Mammouth */}
                 <motion.img
-                    src="/images/parents_t.png"
+                    src="/web-app-histoires/images/parents_t.png"
                     alt="Parents Helmouth"
                     animate={{ y: [0, -5, 0] }}
                     transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
@@ -70,7 +70,7 @@ export default function WelcomePage() {
 
                 {/* Les mammoutheaux (Les bébés) */}
                 <motion.img
-                    src="/images/mammoutheaux_t.png"
+                    src="/web-app-histoires/images/mammoutheaux_t.png"
                     alt="Mammoutheaux"
                     animate={{ y: [0, -7, 0] }}
                     transition={{ repeat: Infinity, duration: 2.8, ease: "easeInOut", delay: 1 }}
@@ -79,7 +79,7 @@ export default function WelcomePage() {
 
                 {/* Le mammouth Helmouth */}
                 <motion.img
-                    src="/images/helmouth_t.png"
+                    src="/web-app-histoires/images/helmouth_t.png"
                     alt="Helmouth"
                     style={{ scaleX: -1 }}
                     animate={{ y: [0, -10, 0] }}
@@ -89,7 +89,7 @@ export default function WelcomePage() {
 
                 {/* L'oiseau Picpic qui vole */}
                 <motion.img
-                    src="/images/picpic_t.png"
+                    src="/web-app-histoires/images/picpic_t.png"
                     alt="Picpic"
                     animate={{ y: [0, -30, 0], x: [0, 15, -10, 0] }}
                     transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 0.5 }}
@@ -98,7 +98,7 @@ export default function WelcomePage() {
 
                 {/* L'écureuil */}
                 <motion.img
-                    src="/images/ecureuil_t.png"
+                    src="/web-app-histoires/images/ecureuil_t.png"
                     alt="Ecureuil"
                     animate={{ y: [0, -12, 0], rotate: [0, 5, -5, 0] }}
                     transition={{ repeat: Infinity, duration: 2.2, ease: "easeInOut", delay: 0.3 }}
@@ -107,7 +107,7 @@ export default function WelcomePage() {
 
                 {/* Le porc-épic */}
                 <motion.img
-                    src="/images/porc_epic_v4_t.png"
+                    src="/web-app-histoires/images/porc_epic_v4_t.png"
                     alt="Porc-épic"
                     animate={{ y: [0, -8, 0], rotate: [0, -3, 3, 0] }}
                     transition={{ repeat: Infinity, duration: 2, ease: "easeInOut", delay: 0.8 }}
@@ -116,7 +116,7 @@ export default function WelcomePage() {
 
                 {/* Le singe entraîneur */}
                 <motion.img
-                    src="/images/singe_v4_t.png"
+                    src="/web-app-histoires/images/singe_v4_t.png"
                     alt="Singe"
                     animate={{ y: [0, -15, 0] }}
                     transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut", delay: 0.1 }}
