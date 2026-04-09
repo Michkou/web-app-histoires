@@ -5,7 +5,7 @@ import VideoPlayerPage from './pages/VideoPlayerPage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/web-app-histoires">
       <Routes>
         <Route path="/" element={<WelcomePage />} />
         <Route path="/selection" element={<StorySelectionPage />} />
