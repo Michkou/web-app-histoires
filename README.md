@@ -4,7 +4,18 @@ Bienvenue dans le projet **Histoires de Pepper** !
 
 Il s'agit d'une application web interactive spécialement conçue pour les enfants. Elle met en scène les aventures de  **Helmouth le mammouth** avec **Pepper le robot** . 
 
-L'objectif de cette application est d'offrir une expérience de lecture et de visionnage amusante. Les enfants sont plongés dans un univers visuel inspiré de la nature (avec un ciel bleu, des arbres, le soleil et des nuages animés en arrière-plan). Ils peuvent y naviguer facilement pour choisir une histoire à écouter ou à regarder grâce à un lecteur vidéo embarqué, adapté à leur âge.
+### 🎯 Démarche pédagogique et éducative
+Le but central de ce projet est de présenter deux histoires avec deux approches différentes : **une version racontée avec beaucoup d'émotions** et **une version sans émotion** (neutre).  
+L'objectif est d'étudier et d'observer si l'enfant **réagit mieux, comprend plus facilement l'histoire, et s'immerge davantage** face à l'une de ces deux interprétations. 
+
+Pour les accompagner au mieux, les enfants sont plongés dans un univers interactif doux et apaisant inspiré de la nature (avec un ciel bleu, des arbres, le soleil et des nuages animés). Ils disposent d'un lecteur vidéo intuitif complètement adapté à leur âge.
+
+---
+
+## 🌟 Accès Rapide (Utilisation immédiate sans installation)
+
+Pour ceux qui souhaitent tester, présenter l'expérience ou **utiliser l'application directement** sans avoir à télécharger ou à installer le moindre fichier :
+👉 **[Cliquez ici pour ouvrir le site en direct](https://Michkou.github.io/web-app-histoires/)**
 
 ---
 
