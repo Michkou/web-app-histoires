@@ -58,7 +58,23 @@ export default function StorySelectionPage() {
             </motion.div>
 
             <div className="cards-container" style={{ position: 'relative', zIndex: 10 }}>
-                {/* Histoire 3: Le mammouth Helmouth joue au fouth (Avec émotion) */}
+                {/* Histoire 1: La moumoute du mammouth Helmouth */}
+                <motion.div
+                    whileHover={{ scale: 1.05, y: -10 }}
+                    className="story-card emotion-card"
+                    style={{
+                        backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.85) 100%), url('/web-app-histoires/images/moumoute.png')",
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                    }}
+                    onClick={() => navigate('/story/1')}
+                >
+                    <h2 style={{ color: 'white', textShadow: '2px 2px 10px rgba(0,0,0,1)', textAlign: 'center' }}>La moumoute du mammouth Helmouth</h2>
+                </motion.div>
+
+                {/* Histoire 3: Le mammouth Helmouth joue au foot */}
                 <motion.div
                     whileHover={{ scale: 1.05, y: -10 }}
                     className="story-card emotion-card"
@@ -66,28 +82,12 @@ export default function StorySelectionPage() {
                         backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.85) 100%), url('/web-app-histoires/images/story4_scene_15.png')",
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
-                        justifyContent: 'space-between',
+                        justifyContent: 'center',
+                        alignItems: 'center',
                     }}
-                    onClick={() => navigate('/video/3')}
+                    onClick={() => navigate('/story/3')}
                 >
-                    <h2 style={{ color: 'white', textShadow: '2px 2px 10px rgba(0,0,0,1)' }}>Le mammouth Helmouth joue au fouth</h2>
-                    <p className="card-badge emotion-badge">Avec émotion 😄</p>
-                </motion.div>
-
-                {/* Histoire 4: Helmouth a perdu sa confiance (Sans émotion) */}
-                <motion.div
-                    whileHover={{ scale: 1.05, y: -10 }}
-                    className="story-card calm-card"
-                    style={{
-                        backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.85) 100%), url('/web-app-histoires/images/story1_scene_11.png')",
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        justifyContent: 'space-between',
-                    }}
-                    onClick={() => navigate('/video/4')}
-                >
-                    <h2 style={{ color: 'white', textShadow: '2px 2px 10px rgba(0,0,0,1)' }}>Helmouth a perdu sa confiance</h2>
-                    <p className="card-badge calm-badge">Sans émotion 😌</p>
+                    <h2 style={{ color: 'white', textShadow: '2px 2px 10px rgba(0,0,0,1)', textAlign: 'center' }}>Le mammouth Helmouth joue au foot</h2>
                 </motion.div>
             </div>
 

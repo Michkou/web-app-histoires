@@ -1,20 +1,24 @@
 import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 export default function VideoPlayerPage() {
     const { id } = useParams();
     const navigate = useNavigate();
+    const location = useLocation();
+    const queryParams = new URLSearchParams(location.search);
+    const emotion = queryParams.get('emotion') || 'avec';
 
     const getTitle = () => {
-        if (id === '3') return "Le mammouth Helmouth joue au fouth";
-        if (id === '4') return "Helmouth a perdu sa confiance";
+        const emotionSuffix = emotion === 'avec' ? " (Avec émotion)" : " (Sans émotion)";
+        if (id === '1') return `La moumoute du mammouth Helmouth${emotionSuffix}`;
+        if (id === '3') return `Le mammouth Helmouth joue au foot${emotionSuffix}`;
         return "Histoire";
     };
 
     const getVideoSrc = () => {
-        if (id === '3') return "/web-app-histoires/videos/Video_H3_fouth.mp4";
-        if (id === '4') return "/web-app-histoires/videos/Video_H4.mp4";
+        if (id === '1') return emotion === 'avec' ? "/web-app-histoires/videos/H1_avec_emotion.mp4" : "/web-app-histoires/videos/H1_sans_emotion.mp4";
+        if (id === '3') return emotion === 'avec' ? "/web-app-histoires/videos/H3_avec_emotion.mp4" : "/web-app-histoires/videos/H3_sans_emotion.mp4";
         return null;
     };
 
